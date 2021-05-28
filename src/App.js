@@ -6,6 +6,7 @@ import MainPage from './pages/MainPage';
 import MedicalPage from './pages/MedicalPage';
 import MedicalResultPage from './pages/MedicalResultPage';
 import CommunityPage from './pages/CommunityPage';
+import CommunityCounselPage from './pages/CommunityCounselPage';
 
 export default function App() {
     return ( 
@@ -16,7 +17,8 @@ export default function App() {
             <Route path='/voice' component={VoicePage} />
             <Route path='/medical' exact component={MedicalPage} />
             <Route path='/medical/result' component={MedicalResultPage} />
-            <Route path='/community' component={CommunityPage} />
+            <Route path='/community' exact component={CommunityPage} />
+            <Route path='/community/counsel' component={CommunityCounselPage} />
         </Router>
     </> 
     ); 
