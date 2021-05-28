@@ -8,16 +8,16 @@ function Buttons() {
   return (
     <WingBlank>
         <WhiteSpace />
-        <Button type="primary" size="large">🏥 의료지원</Button>
+        <Link to="/medical"><Button type="primary" size="large">🏥 의료지원</Button></Link>
         <WhiteSpace />
         <WhiteSpace />
-        <Button size="large">🔊 커뮤니티</Button>
+        <Link to="/community"><Button size="large">🔊 커뮤니티</Button></Link>
         <WhiteSpace />
         <WhiteSpace />
         <Button type="warning" size="large" disabled>🚨 긴급신고</Button>
         <WhiteSpace />
         <WhiteSpace />
-        <Button size="large" loading>듣고 있어요</Button>
+        <Link to="/voice"><Button size="large" loading>듣고 있어요</Button></Link>
         <WhiteSpace />
         <WhiteSpace />
     </WingBlank>
