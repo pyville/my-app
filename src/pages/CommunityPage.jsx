@@ -19,15 +19,10 @@ export default function CommunityPage() {
                 </h1>
             </WingBlank>
                 <div>
-                <List renderHeader={() => '자주 묻는 질문'} className="my-list">
+                    <List renderHeader={() => '자주 묻는 질문'} className="my-list">
                         <Item onClick={() => {}}>
                             커뮤니티 가입은 어떻게 하나요?
                         </Item>
-                        <Link to="/community/counsel">
-                            <Item onClick={() => {}}>
-                                의료 상담에 참여하는 방법을 알려주세요.
-                            </Item>
-                        </Link>
                     </List>
                     <List renderHeader={() => '오늘의 건강 정보'} className="my-list">
                         <Item arrow="horizontal" onClick={() => {}}>
@@ -44,6 +39,13 @@ export default function CommunityPage() {
                         <Item arrow="horizontal" multipleLine onClick={() => {}}>
                             혈관 <Brief>고지혈증, 투석</Brief>
                         </Item>
+                    </List>
+                    <List renderHeader={() => '원격 의료 상담'} className="my-list">
+                        <Link to="/community/counsel">
+                            <Item arrow="horizontal" onClick={() => {}}>
+                                원격 의료 상담
+                            </Item>
+                        </Link>
                     </List>
                     <WhiteSpace />
                     <WingBlank>
